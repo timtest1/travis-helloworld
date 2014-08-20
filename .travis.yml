@@ -1,8 +1,12 @@
 language: node_js
 
 node_js:
-  - "0.10"
-  
+  - "0.10.30"
+cache:
+  directories:
+    - node_modules
+    - /home/travis/.nvm
+
 before_script:
   - npm install -g gulp
 
