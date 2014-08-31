@@ -10,6 +10,7 @@ before_script:
  # - mkdir -p shippable/codecoverage
 
 after_success:
+  - echo $TOTO
   - git remote -v
   - git config --global user.email "thaiat@ipelia.fr"
   - git config --global user.name "thaiat"
