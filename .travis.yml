@@ -11,6 +11,8 @@ before_script:
 
 after_success:
   - git remote -v
+  - npm version patch
+  - git add . && git commit -m "[skip ci] bump version" && git push
 #  - npm run coverage
 #  - mv coverage/cobertura-coverage.xml shippable/codecoverage/coverage.xml
 #  - mocha test -R mocha-lcov-reporter  && 
