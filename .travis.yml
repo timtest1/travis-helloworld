@@ -10,6 +10,7 @@ before_script:
  # - mkdir -p shippable/codecoverage
 
 after_success:
+  - git remote -v
 #  - npm run coverage
 #  - mv coverage/cobertura-coverage.xml shippable/codecoverage/coverage.xml
 #  - mocha test -R mocha-lcov-reporter  && 
