@@ -17,6 +17,7 @@ after_success:
   - npm version patch
   - git commit -am "[skip ci] bump version"
   - git log --oneline
+  - git remote set-url origin git@github.com:thaiat/travis-helloworld.git
   - git push origin master
 #  - npm run coverage
 #  - mv coverage/cobertura-coverage.xml shippable/codecoverage/coverage.xml
