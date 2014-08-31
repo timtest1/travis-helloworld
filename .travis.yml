@@ -13,6 +13,7 @@ after_success:
   - git remote -v
   - git config --global user.email "thaiat@ipelia.fr"
   - git config --global user.name "thaiat"
+  - gti checkout master
   - npm version patch
   - git add . && git commit -m "[skip ci] bump version" && git push
 #  - npm run coverage
