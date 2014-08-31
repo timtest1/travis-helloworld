@@ -15,7 +15,7 @@ after_success:
   - git config --global user.name "thaiat"
   - git checkout master
   - npm version patch
-  - git add . && git commit -m "[skip ci] bump version" && git push
+  - git add . && git commit -m "[skip ci] bump version" && git push origin master
 #  - npm run coverage
 #  - mv coverage/cobertura-coverage.xml shippable/codecoverage/coverage.xml
 #  - mocha test -R mocha-lcov-reporter  && 
